@@ -155,9 +155,9 @@ aside {
 
 /* forms */
 
-input,
-textarea,
-select,
+input, 
+textarea, 
+select, 
 .uneditable-input {
   @include box_sizing;
   border: 1px solid $silver-color;
