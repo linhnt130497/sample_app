@@ -1,7 +1,5 @@
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
-@import 'variable';
-/* universal */
+@import "variable";
+
 body {
   padding-top: 60px;
 }
@@ -23,6 +21,7 @@ textarea {
 }
 
 /* typography */
+
 h1,
 h2,
 h3,
@@ -45,7 +44,6 @@ h2 {
   font-weight: normal;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 p {
@@ -60,13 +58,13 @@ p {
   font-weight: bold;
   letter-spacing: -1px;
   margin-right: 10px;
-  text-transform: uppercase;
   padding-top: 9px;
-}
+  text-transform: uppercase;
 
-#logo:hover {
-  color: $white-color;
-  text-decoration: none;
+  &:hover {
+    color: $white-color;
+    text-decoration: none;
+  }
 }
 
 /* footer */
@@ -78,6 +76,7 @@ footer {
 
   a {
     color: $emperor-color;
+
     &:hover {
       color: $mine-shaft-color;
     }
