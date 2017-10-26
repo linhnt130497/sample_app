@@ -8,4 +8,6 @@ class User < ApplicationRecord
   	format: {with: VALID_EMAIL_REGEX},
   	uniqueness: {case_sensitive: false}
   has_secure_password
+  scope :select_name_email, ->{select :name, :email}
+  scope :order_by_name, ->{order :name}
 end 
