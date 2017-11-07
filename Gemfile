@@ -17,6 +17,7 @@ gem "turbolinks", "5.0.1"
 gem "uglifier", "3.2.0"
 gem "will_paginate", "3.1.5"
 gem "config"
+gem "responders", "~> 2.1"
 
 group :development, :test do
   gem "sqlite3", "1.3.13"

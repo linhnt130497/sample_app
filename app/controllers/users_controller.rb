@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
 
   def show
-  @user = User.find params[:id]
+  @user = User.find_by id: params[:id]
+    unless @user
+    flash[:danger] = "NIL"
+    redirect_to root_url
+    end
   end
 
   def new
@@ -9,16 +13,18 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
     if @user.save
-      # Handle a successful save.
+      log_in @user
+      flash[:success] = t("well_come")
+      redirect_to @user
     else
-      render "new"
+      render :new
     end
   end
   
   def index
-    @users = User.all
+    @users = User.select_name_email
     
   end
 

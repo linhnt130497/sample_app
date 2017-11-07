@@ -12,13 +12,10 @@ en:
   create_account: "Create my account"
   get_help: "Get help on the Ruby on Rails Tutorial at the"
   hello: "Hello world"
-  help: "Help"
-  home: "Home"
   in_tro: "This is the sample application for the tutorial."
   info_about: "This is the sample application for the tutorial."
   info_home: "Ruby on Rails Tutorial"
   is_a: "is a"
-  log_in: "Log in"
   name_author: "Michael Hartl"
   new_users: "This will be a signup page for new users."
   news: "News"
@@ -32,10 +29,37 @@ en:
   sample: "sample application."
   sample_app: "Sample app"
   series: "screencast series"
-  sign_now: "Sign up now!"
   sreen: "screencast series"
   teach_web_development: "to teach web development with"
   the: "The"
   to_get: "To get help on this sample app, see the"
   to_teach: "to teach web development with"
-  well_come: "Welcome to the Sample App"
+  sessions:
+    new:
+      sign_now: "Sign up now!"
+      new_user: "New user?"
+  
+  views:
+    layouts:
+      _header:
+        help: "Help"
+        home: "Home"
+        log_out: "Log out"
+        profile: "Profile"
+        sample: "sample app"
+        settings: "Settings"
+        users: "Users"
+        account: "Account"
+    sessions:
+      new:
+        log_in: "Log in"
+
+  controllers:
+    sessions_controller: 
+      notify_invalid: "Invalid email/password combination" 
+
+    userscontroller:
+      well_come: "Welcome to the Sample App"
+      
+
+
