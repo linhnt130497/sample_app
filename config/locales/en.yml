@@ -1,6 +1,5 @@
 
 en:
-  sign: "Sign up"
   about: "About"
   and: "and"
   auther: "Michael Hartl"
@@ -19,6 +18,7 @@ en:
   name_author: "Michael Hartl"
   new_users: "This will be a signup page for new users."
   news: "News"
+  no_user: "No existing user"
   page_for: "This is the home page for the"
   rails_help: "Rails Tutorial help section"
   rails_logo: "Rails logo"
@@ -29,20 +29,21 @@ en:
   sample: "sample application."
   sample_app: "Sample app"
   series: "screencast series"
+  sign: "Sign up"
   sreen: "screencast series"
   teach_web_development: "to teach web development with"
   the: "The"
   to_get: "To get help on this sample app, see the"
   to_teach: "to teach web development with"
-  no_user: "No existing user"
   sessions:
     new:
-      sign_now: "Sign up now!"
       new_user: "New user?"
+      sign_now: "Sign up now!"
   
   views:
     layouts:
       _header:
+        account: "Account"
         help: "Help"
         home: "Home"
         log_out: "Log out"
@@ -50,14 +51,13 @@ en:
         sample: "sample app"
         settings: "Settings"
         users: "Users"
-        account: "Account"
   sessions:
     new:
       log_in: "Log in"
   shared:
     error_messages:
-      form_contains: "The form contains"
       error: "error"
+      form_contains: "The form contains"
 
   controllers:
     sessions_controller: 
