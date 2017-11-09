@@ -36,6 +36,7 @@ en:
   the: "The"
   to_get: "To get help on this sample app, see the"
   to_teach: "to teach web development with"
+  user_deleted: "User deleted"
   sessions:
     new:
       new_user: "New user?"
@@ -52,14 +53,9 @@ en:
         settings: "Settings"
         users: "Users"
     users:
-      _user:
+      user:
         delete: "delete"
         you_sure: "You sure?"
-  users:
-    create:
-      save_success: "Save successful!"
-    new:
-      confirmation: "Confirmation"
   sessions:
     new:
       log_in: "Log in"
@@ -73,3 +69,21 @@ en:
 
     userscontroller:
       well_come: "Welcome to the Sample App"
+
+  users:
+    create:
+      cannot_create: "Can not create"
+      save_success: "Save successful!"
+    new:
+      confirmation: "Confirmation"
+    edit:
+      change: "change"
+      confirm: "Confirmation"
+      edit_user: "Edit user"
+      please_log_in: "Please log in."
+      save_changes: "Save changes"
+      update_profile: "Update your profile"
+    update:
+      profile_updated: "Profile updated"
+    index: 
+      all_users: "All users"

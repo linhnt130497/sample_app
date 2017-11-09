@@ -8,10 +8,10 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
       uniqueness: {case_sensitive: false}
   has_secure_password
-  scope :select_name_email, ->{select :name, :email}
+  scope :select_name_email, ->{select :id,:name, :email}
   scope :order_by_date, ->{order created_at: :asc}
 
-  def User.digest(string)
+  def User.digest string
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
       BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost) 
@@ -31,6 +31,10 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attributes :remember_digest, nil
+    update_attributes remember_digest: nil
+  end
+
+  def current_user? user
+    user == current_user
   end
 end 
