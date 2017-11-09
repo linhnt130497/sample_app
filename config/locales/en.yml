@@ -1,6 +1,5 @@
 
 en:
-  sign: "Sign up"
   about: "About"
   and: "and"
   auther: "Michael Hartl"
@@ -31,6 +30,7 @@ en:
   sample: "sample application."
   sample_app: "Sample app"
   series: "screencast series"
+  sign: "Sign up"
   sreen: "screencast series"
   teach_web_development: "to teach web development with"
   the: "The"
@@ -38,9 +38,8 @@ en:
   to_teach: "to teach web development with"
   sessions:
     new:
-      sign_now: "Sign up now!"
       new_user: "New user?"
-  
+      sign_now: "Sign up now!"
   views:
     layouts:
       _header:
