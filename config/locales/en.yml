@@ -65,3 +65,17 @@ en:
 
     userscontroller:
       well_come: "Welcome to the Sample App"
+
+  users:
+    edit:
+      edit_user: "Edit user"
+      update_profile: "Update your profile"
+      save_changes: "Save changes"
+      change: "change"
+      confirm: "Confirmation"
+      please_log_in: "Please log in."
+    update:
+      profile_updated: "Profile updated"
+    index: 
+      all_users: "All users"
+

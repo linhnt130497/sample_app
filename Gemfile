@@ -17,6 +17,7 @@ gem "sass-rails", ">= 3.2"
 gem "turbolinks", "5.0.1"
 gem "uglifier", "3.2.0"
 gem "will_paginate", "3.1.5"
+gem "faker", "1.7.3"
 
 group :development, :test do
   gem "byebug", "9.0.6", platform: :mri
