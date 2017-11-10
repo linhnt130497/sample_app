@@ -9,3 +9,5 @@ users_helper:
 users:
   index:
     size_gravatar: 50
+sessions_controller:
+  num: 1

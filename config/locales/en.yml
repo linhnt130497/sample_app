@@ -1,20 +1,27 @@
 
 en:
   about: "About"
+  account_active: "Account activated! Check your email for the activation link."
   and: "and"
   auther: "Michael Hartl"
   book: "book"
   by: "By"
+  check_activate: "Please check your email to activate your account."
   confirmation: "Confirmation"
   cont : "Contact the Ruby on Rails Tutorial about the sample app at the"
   cont_page: "contact page"
   contact: "Contact"
   create_account: "Create my account"
+  find_activation_html: "find me in app/views/user_mailer/account_activation.html.erb"
+  find_activation_password: "find me in app/views/user_mailer/password_reset.html.erb"
+  find_activation_txt: "find me in app/views/user_mailer/account_activation.text.erb"
+  find_reset_password: "find me in app/views/user_mailer/password_reset.text.erb"
   get_help: "Get help on the Ruby on Rails Tutorial at the"
   hello: "Hello world"
   in_tro: "This is the sample application for the tutorial."
   info_about: "This is the sample application for the tutorial."
   info_home: "Ruby on Rails Tutorial"
+  invalid_link: "Invalid activation link"
   is_a: "is a"
   name_author: "Michael Hartl"
   new_users: "This will be a signup page for new users."
@@ -36,7 +43,9 @@ en:
   the: "The"
   to_get: "To get help on this sample app, see the"
   to_teach: "to teach web development with"
-  user_deleted: "User deleted"
+  user_activation: "User#account_activation"
+  user_password_reset: "User#password_reset"
+  wel_come: "Welcome to the Sample App"
   sessions:
     new:
       new_user: "New user?"
@@ -66,9 +75,7 @@ en:
   controllers:
     sessions_controller: 
       notify_invalid: "Invalid email/password combination" 
-
-    userscontroller:
-      well_come: "Welcome to the Sample App"
+    
 
   users:
     create:
