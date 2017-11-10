@@ -1,0 +1,11 @@
+<% provide :title, t(".all_users") %>
+<h1><%= t(".all_users") %></h1>
+
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= gravatar_for user, size: Settings.users.index.size_gravatar %>
+      <%= link_to user.name, user %>
+    </li>
+  <% end %>
+</ul>
