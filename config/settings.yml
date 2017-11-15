@@ -4,5 +4,12 @@ user:
   min_length_password: 6
 users_controller:
   for_per_page: 50
+users_helper:
+  option_size: 80
+users:
+  index:
+    size_gravatar: 50
 sessions_controller:
   num: 1
+micropost:
+  maximum_length: 140
