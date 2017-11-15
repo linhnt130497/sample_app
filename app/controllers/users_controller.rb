@@ -34,18 +34,9 @@ class UsersController < ApplicationController
   def update
     @user = User.find_by id: params[:id]
 
-    if @user.update_attributes user_params
-      flash[:success] = t ".profile_updated"
-      redirect_to @user
-    else
-      render :edit
-    end
-  end
-
-  def destroy
-    User.find_by(params[:id]).destroy
-    flash[:success] = t "user_deleted"
-    redirect_to users_url
+    return if @user
+      flash[:danger] = t "no_user"
+        redirect_to root_url
   end
 
   private

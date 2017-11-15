@@ -32,7 +32,6 @@ class PasswordResetsController < ApplicationController
     end
   end
 
-
   private
 
   def load_user
@@ -48,8 +47,8 @@ class PasswordResetsController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit :password, :password_confirmation
-  end
+      params.require(:user).permit :password, :password_confirmation
+    end
    
   def check_expiration
     if @user.password_reset_expired?
