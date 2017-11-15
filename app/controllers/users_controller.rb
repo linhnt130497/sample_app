@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   before_action :logged_in_user, :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   before_action :user_action, only: %i(show edit)
-
   def index
     @users = User.select_name_email.order_by_date.paginate page: params[:page],
       per_page: Settings.users_controller.for_per_page
@@ -16,11 +15,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t "well_come"
-      redirect_to @user
+      UserMailer.account_activation(@user).deliver_now
+      flash[:info] = t "check_activate"
+      redirect_to root_url
     else
-      flash[:danger] = t ".cannot_create"
       render :new
     end
   end
@@ -66,7 +64,7 @@ class UsersController < ApplicationController
 
   def correct_user
     @user = User.find_by params[:id]
-    redirect_to root_url unless current_user? @user
+    redirect_to root_url unless current_user.current_user? @user
   end
 
   def verify_admin!
