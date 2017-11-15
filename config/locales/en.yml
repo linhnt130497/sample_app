@@ -1,9 +1,9 @@
-  
+
 en:
   about: "About"
-  account_activation: "Account activation"
-  account_active: "Account activated! Check your email for the activation link."
-  address_notfound: "Email address not found"
+  address_notfound: "Adress not found"
+  account_active: "account activated"
+  ago: "ago"
   and: "and"
   auther: "Michael Hartl"
   be_empty: "can't be empty"
@@ -16,12 +16,9 @@ en:
   cont_page: "contact page"
   contact: "Contact"
   create_account: "Create my account"
-  expired_password: "Password reset has expired."
-  find_activation_html: "find me in app/views/user_mailer/account_activation.html.erb"
-  find_activation_password: "find me in app/views/user_mailer/password_reset.html.erb"
-  find_activation_txt: "find me in app/views/user_mailer/account_activation.text.erb"
-  find_reset_password: "find me in app/views/user_mailer/password_reset.text.erb"
-  forgot_password: "forgot password"
+  danger_err_login: "Invalid email/password combination"
+  delete: "delete"
+  error: "error"
   get_help: "Get help on the Ruby on Rails Tutorial at the"
   hello: "Hello world"
   in_tro: "This is the sample application for the tutorial."
@@ -29,17 +26,22 @@ en:
   info_home: "Ruby on Rails Tutorial"
   invalid_link: "Invalid activation link"
   is_a: "is a"
+  micropost: "micropost"
+  microposts: "Micropost"
+  micropost_created: "Micropost created!"
+  micropost_deleted: "Micropost deleted"
+  micropost_feed: "Micropost Feed"
   name_author: "Michael Hartl"
   new_users: "This will be a signup page for new users."
   news: "News"
   no_user: "No existing user"
   page_for: "This is the home page for the"
-  password_has_reset: "Password has been reset."
-  password_reset: "Password reset"
+  please_log_in: "Please log in."
+  post: "Post"
+  posted: "Posted"
   rails_help: "Rails Tutorial help section"
   rails_logo: "Rails logo"
   rails_tuto: "Ruby on Rails Tutorial"
-  remember_me: "Remember me on this computer"
   reset_password: "Reset password"
   ror: "Ruby on Rails"
   ru_ap: "Ruby on Rails Tutorial Sample App"
@@ -53,15 +55,14 @@ en:
   submit: "Submit"
   teach_web_development: "to teach web development with"
   the: "The"
+  the_form_contains: "The form contains"
   to_get: "To get help on this sample app, see the"
   to_teach: "to teach web development with"
   update_password: "Update password"
-  user_activation: "User#account_activation"
-  user_password_reset: "User#password_reset"
-  to_reset: "To reset your password click the link below"
-  link_hours: "This link will expire in two hours"
-  if_not_request: "If you did not request your password to be reset, please ignore this email and
-  your password will stay as it is"
+  user_deleted: "User deleted"
+  view_my_profile: "view my profile"
+  well_come: "Welcome to the Sample App"
+  you_sure: "You sure?"
   sessions:
     new:
       new_user: "New user?"
@@ -91,8 +92,6 @@ en:
   controllers:
     sessions_controller: 
       notify_invalid: "Invalid email/password combination" 
-    
-
   users:
     create:
       cannot_create: "Can not create"
