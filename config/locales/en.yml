@@ -1,9 +1,10 @@
   
 en:
   about: "About"
-  account_activation: "Account activation"
+  account_activations: "Account activation"
   account_active: "Account activated! Check your email for the activation link."
   address_notfound: "Email address not found"
+  ago: "ago"
   and: "and"
   auther: "Michael Hartl"
   be_empty: "can't be empty"
@@ -11,11 +12,13 @@ en:
   by: "By"
   check_activate: "Please check your email to activate your account."
   check_link: "Check your email for the activation link."
+  compose_new_micropost: "Compose new micropost..."
   confirmation: "Confirmation"
   cont : "Contact the Ruby on Rails Tutorial about the sample app at the"
   cont_page: "contact page"
   contact: "Contact"
   create_account: "Create my account"
+  delete: "delete"
   expired_password: "Password reset has expired."
   find_activation_html: "find me in app/views/user_mailer/account_activation.html.erb"
   find_activation_password: "find me in app/views/user_mailer/password_reset.html.erb"
@@ -29,6 +32,14 @@ en:
   info_home: "Ruby on Rails Tutorial"
   invalid_link: "Invalid activation link"
   is_a: "is a"
+  if_not_request: "If you did not request your password to be reset, please ignore this email and
+  your password will stay as it is"
+  link_hours: "This link will expire in two hours"
+  micropost: micropost
+  microposts: "Microposts"
+  micropost_deleted: "Micropost deleted"
+  micropost_feed: "Micropost Feed"
+  micropost_success: "Create successful!"
   name_author: "Michael Hartl"
   new_users: "This will be a signup page for new users."
   news: "News"
@@ -36,6 +47,8 @@ en:
   page_for: "This is the home page for the"
   password_has_reset: "Password has been reset."
   password_reset: "Password reset"
+  post: "Post"
+  posted: "Posted"
   rails_help: "Rails Tutorial help section"
   rails_logo: "Rails logo"
   rails_tuto: "Ruby on Rails Tutorial"
@@ -54,14 +67,14 @@ en:
   teach_web_development: "to teach web development with"
   the: "The"
   to_get: "To get help on this sample app, see the"
+  to_reset: "To reset your password click the link below"
   to_teach: "to teach web development with"
   update_password: "Update password"
   user_activation: "User#account_activation"
   user_password_reset: "User#password_reset"
-  to_reset: "To reset your password click the link below"
-  link_hours: "This link will expire in two hours"
-  if_not_request: "If you did not request your password to be reset, please ignore this email and
-  your password will stay as it is"
+  view_profile: "view my profile"
+  you_sure: "You sure?"
+  wel_come: "Welcome"
   sessions:
     new:
       new_user: "New user?"
@@ -110,3 +123,5 @@ en:
       profile_updated: "Profile updated"
     index: 
       all_users: "All users"
+      
+   
