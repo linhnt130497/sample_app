@@ -2,7 +2,14 @@ user:
   max_length_name: 50
   max_length_email: 255
   min_length_password: 6
+  index:
+    size_gravatar: 50
 users_controller:
   for_per_page: 50
 sessions_controller:
   num: 1
+users_helper:
+  option_size: 50
+micropost:
+  max_lenth: 140
+  
