@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, :correct_user, only: %i(edit update)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   before_action :user_action, only: %i(show edit)
+  before_action :logged_in_user, only: %i(index edit update destroy following followers)
+
   def index
     @users = User.select_name_email.order_by_date.paginate page: params[:page],
       per_page: Settings.users_controller.for_per_page
@@ -41,6 +43,21 @@ class UsersController < ApplicationController
       flash[:danger] = t "no_user"
         redirect_to root_url
   end
+
+  def following
+    @title = t "following"
+    @user  = User.find_by params[:id]
+    @users = @user.following.paginate page: params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    @user  = User.find_by params[:id]
+    @users = @user.followers.paginate page: params[:page]
+    render "show_follow"
+  end
+
 
   private
 

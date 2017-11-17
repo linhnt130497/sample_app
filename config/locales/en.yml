@@ -75,6 +75,10 @@ en:
   view_profile: "view my profile"
   you_sure: "You sure?"
   wel_come: "Welcome"
+  following: "following"
+  followers: "followers"
+  unfollow: "Unfollow"
+  view_my_profile: "view my profile"
   sessions:
     new:
       new_user: "New user?"
@@ -93,7 +97,6 @@ en:
     users:
       user:
         delete: "delete"
-        you_sure: "You sure?"
   sessions:
     new:
       log_in: "Log in"
